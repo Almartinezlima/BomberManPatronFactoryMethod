@@ -49,3 +49,5 @@ ABloque* AFabricaBloques::CrearBloque(FString tipoBloque, FVector posicion)
     }
     else return nullptr;
 }
+
+//Instancia y retorna un actor de bloque del tipo especificado en la posición indicada.

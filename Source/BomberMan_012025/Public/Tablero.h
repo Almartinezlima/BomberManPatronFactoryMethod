@@ -19,8 +19,8 @@ public:
     TArray<TArray<int32>> MapaBloques;
 
     // Dimensiones del tablero
-    int32 Ancho = 40;
-    int32 Alto = 45;
+    int32 Ancho = 50;
+    int32 Alto = 50;
 
     // Constantes de tipos de bloques
     static const int32 VACIO = 0;

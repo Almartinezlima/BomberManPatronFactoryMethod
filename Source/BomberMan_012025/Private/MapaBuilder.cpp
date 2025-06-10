@@ -33,6 +33,6 @@ TArray<TArray<int32>> AMapaBuilder::GetResultado()
         return TableroActual->MapaBloques;
     }
 
-    // Devolver una matriz vac?a si no hay tablero
+    // Devuelve la matriz de bloques del tablero construido, Si no hay tablero, devuelve una matriz vacía.
     return TArray<TArray<int32>>();
 }

@@ -6,7 +6,7 @@
 #include "Tablero.h"
 #include "MapaBuilder.generated.h"
 
-UCLASS(Abstract)
+UCLASS(Abstract)//defino la clase abstracta
 class BOMBERMAN_012025_API AMapaBuilder : public AActor
 {
     GENERATED_BODY()
@@ -17,9 +17,9 @@ public:
 
     // El producto que estamos construyendo
     UPROPERTY(VisibleAnywhere, Category = "Builder")
-    ATablero* TableroActual;
+	ATablero* TableroActual;//este mi producto final se construye paso a paso
 
-    // M?todos para la construcci?n por pasos del mapa
+    // Metodos para la construccion por pasos del mapa
     virtual void BuildBordes() PURE_VIRTUAL(AMapaBuilder::BuildBordes, );
     virtual void BuildEstructuraInterna() PURE_VIRTUAL(AMapaBuilder::BuildEstructuraInterna, );
     virtual void BuildPowerUps() PURE_VIRTUAL(AMapaBuilder::BuildPowerUps, );

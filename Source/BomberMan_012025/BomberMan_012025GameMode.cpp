@@ -41,7 +41,7 @@ void ABomberMan_012025GameMode::BeginPlay()
 
     // Construir un tipo de mapa por defecto
     // Puedes cambiar "Anillo" por "Infinito" o "Flotante" para probar diferentes mapas
-    TableroJuego = ConstruirMapa("Flotante");
+    TableroJuego = ConstruirMapa("Infinito");
 
     if (TableroJuego)
     {

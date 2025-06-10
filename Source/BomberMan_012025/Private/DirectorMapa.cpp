@@ -7,11 +7,13 @@ ADirectorMapa::ADirectorMapa()
     BuilderActual = nullptr;
 }
 
+//Asigna el builder concreto que se va a utilizar para construir el tablero.
 void ADirectorMapa::SetBuilder(AMapaBuilder* NuevoBuilder)
 {
     BuilderActual = NuevoBuilder;
 }
 
+//Reinicia el builder y crea un nuevo tablero
 void ADirectorMapa::ConstruirMapa()
 {
     if (BuilderActual)
@@ -43,3 +45,6 @@ TArray<TArray<int32>> ADirectorMapa::ObtenerMapa()
     // Devolver una matriz vac�a si no hay builder
     return TArray<TArray<int32>>();
 }
+
+//•	El director no construye el tablero directamente, sino que llama a los métodos 
+// del builder en el orden correcto

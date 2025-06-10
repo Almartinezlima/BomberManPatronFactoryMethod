@@ -15,7 +15,7 @@ class BOMBERMAN_012025_API AMapaAnilloBuilder : public AMapaBuilder
 	GENERATED_BODY()
 
 public:
-    AMapaAnilloBuilder();
+    AMapaAnilloBuilder();//declaran la clase concreta que implementa los métodos virtuales del builder base para crear un mapa 
 
     virtual void BuildBordes() override;
     virtual void BuildEstructuraInterna() override;

@@ -4,3 +4,9 @@ Intermediate/
 *.user
 *.suo
 *.log
+.vs/
+Binaries/
+Intermediate/
+*.user
+*.suo
+*.log

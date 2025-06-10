@@ -24,3 +24,5 @@ void ATablero::OnConstruction(const FTransform& Transform)
     Super::OnConstruction(Transform);
     IniciarMatriz();
 }
+
+//•	Tablero es el producto que los builders modifican.
